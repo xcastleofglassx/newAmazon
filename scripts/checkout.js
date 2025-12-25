@@ -11,6 +11,8 @@ console.log(deliveryDate.format('dddd, MMMM D'));
 
 hello();
 
+function renderOrderSummary(){
+
 let cartSummaryHTML = '';
 
 cart.forEach((cartItem) => {
@@ -186,5 +188,8 @@ document.querySelectorAll('.js-delivery-option')
 element.addEventListener('click', () =>{
   const {productId, deliveryOptionId} = element.dataset;
 updateDeliveryOption(productId, deliveryOptionId);
+renderOrderSummary();
 })
 });
+};
+renderOrderSummary();
