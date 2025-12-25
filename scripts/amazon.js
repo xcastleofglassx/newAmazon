@@ -74,3 +74,4 @@ document.querySelectorAll('.js-add-to-cart')
 const cartQuantity = calculateCartQuantity();
  document.querySelector('.js-cart-quantity')
     .innerHTML = cartQuantity;
+    
